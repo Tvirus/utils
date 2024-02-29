@@ -2,7 +2,7 @@
 
 #include <fcntl.h>
 #include <sys/file.h>
-int file_lock(const char *file, int *fd)
+int file_try_wrlock(const char *file, int *fd)
 {
     int _fd;
 
